@@ -1,3 +1,3 @@
 # Algorithms
 
-[ Knuth–Morris–Pratt ](kmp)
+[ Knuth–Morris–Pratt ](KMP)
