@@ -1,4 +1,4 @@
-# Problem with Basic Algorithm:
+# Problem with Naive Algorithm:
 
 In the basic string searching algorithm, when a mismatch occurs between the pattern and a substring of the main string, it typically requires backtracking to recheck characters. This leads to potentially repetitive comparisons and inefficient searching, especially when the size of the string and pattern grows.
 Repeatedly check characters, compare repeatedly, and backtrack whenever a mismatch occurs.
