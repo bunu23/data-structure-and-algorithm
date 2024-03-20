@@ -53,3 +53,68 @@ The Pi Table for the pattern "ABCDABD" is as follows:
 | 4        | 1     |
 | 5        | 2     |
 | 6        | 0     |
+
+```java
+// Function to precompute the LPS table
+function computeLPSArray(pattern, lps)
+    n = length(pattern)        // Calculate the length of the pattern
+    lps[0] = 0                 // The length of prefix that is also a suffix for the first character is always 0
+    i = 1                      // Initialize index for pattern
+    j = 0                      // Initialize index for LPS table
+
+    // Loop to compute LPS values for each character in the pattern
+    while (i < n) {
+        if (pattern[i] == pattern[j]) {
+            // Characters match, increment both pointers and update LPS value
+            lps[i] = j + 1
+            i++
+            j++
+        } else {
+            // Mismatch occurred
+            if (j != 0) {
+                // Use LPS value to shift pattern
+                j = lps[j - 1]
+            } else {
+                // No match, set LPS to 0 and move i only
+                lps[i] = 0
+                i++
+            }
+        }
+    }
+
+// Function to search for pattern in text
+function search(text, pattern)
+    n = length(text)          // Calculate the length of the text
+    m = length(pattern)       // Calculate the length of the pattern
+
+    // Create LPS table
+    lps = new array(m)
+    computeLPSArray(pattern, lps)  // Precompute the LPS array
+
+    i = 0                      // Initialize index for text
+    j = 0                      // Initialize index for pattern
+
+    // Loop through the text to find pattern occurrences
+    while (i < n) {
+        if (text[i] == pattern[j]) {
+            // Characters match, move both pointers
+            i++
+            j++
+            if (j == m) {
+                // Pattern found at current index, print the index
+                print("Pattern found at index", i - m)
+                // Potential shift for the next pattern occurrence using LPS values
+                j = lps[j - 1]
+            }
+        } else {
+            // Mismatch occurred
+            if (j != 0) {
+                // Use LPS value to shift pattern
+                j = lps[j - 1]
+            } else {
+                // No shift possible, increment text pointer only
+                i++
+            }
+        }
+    }
+```
