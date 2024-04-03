@@ -13,12 +13,16 @@ Two common methods for graph traversal are Breadth-First Search (BFS) and Depth-
 
 ## Diagram Illustration
 
-        1
-    /   \
-
+1
+/ \
 2 3
 / \ / \
- 4 5 6 7
+4 5 6 7
+
+In this diagram:
+
+- **Nodes**: Represent vertices in the graph.
+- **Edges**: Connections between the vertices.
 
 ### Traversal Orders
 
