@@ -29,8 +29,7 @@ Example Trees, Graph
 An array is a linear data structure where elements are stored in contiguous memory locations. Each element is accessed using an index.
 
 **Diagram:**
-Index: 0 1 2 3 4
-Value: 10 20 30 40 50
+![Array Diagram](assets/Array.png)
 
 **Description:**
 
@@ -44,11 +43,7 @@ Value: 10 20 30 40 50
 A tree is a non-linear data structure with a hierarchical arrangement. Each node can have zero or more child nodes, and there is a single root node.
 
 **Diagram:**
-1
-/ \
- 2 3
-/ \
-4 5
+![Tree Diagram](assets/tree.png)
 
 **Description:**
 
