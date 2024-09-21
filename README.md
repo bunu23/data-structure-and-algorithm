@@ -29,7 +29,7 @@ Example Trees, Graph
 An array is a linear data structure where elements are stored in contiguous memory locations. Each element is accessed using an index.
 
 **Diagram:**
-![Array Diagram](assets/Array.png)
+<img src="assets/Array.png" alt="Array Diagram" width="300">
 
 **Description:**
 
