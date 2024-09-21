@@ -41,7 +41,7 @@ An array is a linear data structure where elements are stored in contiguous memo
 
 A tree is a non-linear data structure with a hierarchical arrangement. Each node can have zero or more child nodes, and there is a single root node.
 
-<img src="assets/Tree.png" alt="Array Diagram" width="500" height="300">
+<img src="assets/Tree.png" alt="Array Diagram" width="400" height="300">
 
 **Description:**
 
