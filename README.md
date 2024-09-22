@@ -24,7 +24,7 @@ Example Trees, Graph
 
 ## Examples and Comparison
 
-### Array
+# Array
 
 An array is a linear data structure where elements are stored in contiguous memory locations. Each element is accessed using an index.
 
@@ -37,7 +37,13 @@ An array is a linear data structure where elements are stored in contiguous memo
 - <u>**Traversal**:</u> Sequential from start to end.
 - <u>**Use Cases**:</u> Suitable for simple, ordered collections where direct access is needed.
 
-### Tree
+## Demo Code
+
+You can find all demo code related to array in the following folder:
+
+- [View All Array Demo Code](Arrays)
+
+# Tree
 
 A tree is a non-linear data structure with a hierarchical arrangement. Each node can have zero or more child nodes, and there is a single root node.
 
