@@ -39,7 +39,7 @@ An array is a linear data structure where elements are stored in contiguous memo
 
 ## Demo Code
 
-You can find all demo code related to array in the following folder:
+You can find the demo code link below :
 
 - [View All Array Demo Code](Arrays)
 
