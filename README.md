@@ -22,9 +22,10 @@ In non-linear data structures, elements are not arranged sequentially. They are 
 
 Example Trees, Graph
 
-# DataStructures and Algorithms
+# Data Structures and Algorithms
 
 - [Array](Arrays)
+- [LinkedList](LinkedList)
 
 | Algorithm                   | Time Complexity                 | Space Complexity        |
 | --------------------------- | ------------------------------- | ----------------------- |
