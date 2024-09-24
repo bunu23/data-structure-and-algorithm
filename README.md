@@ -22,39 +22,9 @@ In non-linear data structures, elements are not arranged sequentially. They are 
 
 Example Trees, Graph
 
-## Examples and Comparison
+# DataStructures and Algorithms
 
-# Array
-
-An array is a linear data structure where elements are stored in contiguous memory locations. Each element is accessed using an index.
-
-<img src="assets/Array.png" alt="Array Diagram" width="500" height="100">
-
-**Description:**
-
-- <u>**Structure**:</u> Linear, fixed-size, elements stored in contiguous memory.
-- <u>**Access**:</u> Directly by index.
-- <u>**Traversal**:</u> Sequential from start to end.
-- <u>**Use Cases**:</u> Suitable for simple, ordered collections where direct access is needed.
-
-## Basic Array Manipulation Demo Code
-
-- [View Basic Array Manipulation Demo Code](Arrays)
-
-# Tree
-
-A tree is a non-linear data structure with a hierarchical arrangement. Each node can have zero or more child nodes, and there is a single root node.
-
-<img src="assets/Tree.png" alt="Array Diagram" width="400" height="300">
-
-**Description:**
-
-- <u>**Structure**:</u> Hierarchical, with nodes having a parent-child relationship.
-- <u>**Access**:</u> Requires traversal from the root to the desired node.
-- <u>**Traversal**:</u> Various methods (pre-order, in-order, post-order).
-- <u>**Use Cases**:</u> Suitable for hierarchical data such as file systems or organizational structures.
-
-# Algorithms
+- [Array](Arrays)
 
 | Algorithm                   | Time Complexity                 | Space Complexity        |
 | --------------------------- | ------------------------------- | ----------------------- |
