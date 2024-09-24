@@ -27,6 +27,6 @@ A singly linked list is a data structure used for storing a sequence of nodes, w
 Head -> [Data: 10] -> [Data: 8] -> [Data: 1] -> [Data: 11] -> [Data: 15] -> null
 ```
 
-[Click here to view the Singly Linked List Demo Code Examples](singly-linked-list)
+[Demo Code](singly-linked-list)
 
 ## Doubly Linked List
