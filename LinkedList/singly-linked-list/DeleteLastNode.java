@@ -1,3 +1,5 @@
+//delete last node
+
 public class DeleteLastNode {
 
     private ListNode head;
