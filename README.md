@@ -1,8 +1,7 @@
 # Data Structures and Algorithms
 
-- [Array](Arrays)
-
-- [LinkedList](LinkedList)
+- [Array - Introduction and Basic Array Manipulation Solution Demo](Arrays)
+- [LinkedList - Singly and Doubly Linked List](LinkedList)
 
 | Algorithm                   | Time Complexity                 | Space Complexity        |
 | --------------------------- | ------------------------------- | ----------------------- |
