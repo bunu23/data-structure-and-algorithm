@@ -1,7 +1,6 @@
 # Data Structures and Algorithms
 
--[Data Structres - Linear and Non-Linear](Introduction)
-
+- [Data Structres - Linear and Non-Linear](Introduction)
 - [Array - Introduction and Basic Array Manipulation Solution Demo](Arrays)
 - [LinkedList - Singly and Doubly Linked List](LinkedList)
 
