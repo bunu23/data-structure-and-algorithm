@@ -57,9 +57,7 @@ An array is a linear data structure where elements are stored in contiguous memo
 - <u>**Traversal**:</u> Sequential from start to end.
 - <u>**Use Cases**:</u> Suitable for simple, ordered collections where direct access is needed.
 
-###
-
-## [Basic Array Manipulation Solution Demo](Arrays)
+### [Array Manipulation - Demo Code](Arrays)
 
 # Linked List
 
