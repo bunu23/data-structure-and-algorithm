@@ -21,6 +21,10 @@ Data Structures are a way of organizing and storing data so that it can be acces
 2. Organization: They provide ways to structure data in a meaningful way.
 3. Abstraction: They allow developers to work with data in a more abstract way, focusing on what operations can be performed rather than how they are implemented.
 
+---
+
+## Types of Data Structures
+
 ### Linear Data Structures
 
 In linear data structures, elements are arranged sequentially, and each element is connected to its previous and next element. They allow traversal in a single level of hierarchy.
