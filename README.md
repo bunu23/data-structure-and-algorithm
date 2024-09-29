@@ -13,9 +13,9 @@
 
 ---
 
-Data Structures are a way of organizing and storing data so that it can be accessed and modified efficiently. They are crucial for designing efficient algorithms and solving complex problems.
-
 ## Why Data Structures?
+
+Data Structures are a way of organizing and storing data so that it can be accessed and modified efficiently. They are crucial for designing efficient algorithms and solving complex problems.
 
 1. Efficiency: They help optimize performance for different operations (e.g., searching, sorting, inserting).
 2. Organization: They provide ways to structure data in a meaningful way.
