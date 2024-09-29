@@ -39,7 +39,7 @@ In non-linear data structures, elements are not arranged sequentially. They are 
 
 ---
 
-## [Array](Arrays)
+# [Array](Arrays)
 
 An array is a linear data structure where elements are stored in contiguous memory locations. Each element is accessed using an index.
 
@@ -57,7 +57,7 @@ An array is a linear data structure where elements are stored in contiguous memo
 - <u>**Traversal**:</u> Sequential from start to end.
 - <u>**Use Cases**:</u> Suitable for simple, ordered collections where direct access is needed.
 
-# Linked List
+# [Linked List](LinkedList)
 
 ## Singly Linked List
 
@@ -85,10 +85,6 @@ A singly linked list is a data structure used for storing a sequence of nodes, w
 ```
 Head -> [Data: 10] -> [Data: 8] -> [Data: 1] -> [Data: 11] -> [Data: 15] -> null
 ```
-
-### Demo Code
-
-[Demo](singly-linked-list)
 
 ---
 
