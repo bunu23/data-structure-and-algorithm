@@ -59,7 +59,7 @@ An array is a linear data structure where elements are stored in contiguous memo
 
 # [Linked List](LinkedList)
 
-## Singly Linked List
+### [Singly Linked List](LinkedList/singly-linked-list)
 
 ### What is a Singly Linked List?
 
