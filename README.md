@@ -39,7 +39,7 @@ In non-linear data structures, elements are not arranged sequentially. They are 
 
 ---
 
-## Array
+## [Array](Arrays)
 
 An array is a linear data structure where elements are stored in contiguous memory locations. Each element is accessed using an index.
 
@@ -56,8 +56,6 @@ An array is a linear data structure where elements are stored in contiguous memo
 - <u>**Access**:</u> Directly by index.
 - <u>**Traversal**:</u> Sequential from start to end.
 - <u>**Use Cases**:</u> Suitable for simple, ordered collections where direct access is needed.
-
-### [Array Manipulation - Demo Code](Arrays)
 
 # Linked List
 
