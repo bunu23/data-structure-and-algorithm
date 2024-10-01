@@ -1,6 +1,7 @@
 
-//detect a loop
-public class DetectLoop {
+// find start of loop in linked list
+public class FindStartOfLoop {
+
     private ListNode head;
 
     private static class ListNode {
@@ -27,6 +28,20 @@ public class DetectLoop {
 
     }
 
+    public void insert(int value) {
+        ListNode newNode = new ListNode(value);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        ListNode current = head;
+        while (null != current.next) {
+            current = current.next;
+        }
+        current.next = newNode;
+
+    }
+
     public boolean containsLoop() {
         ListNode pointerOne = head;
         ListNode pointerTwo = head;
@@ -39,6 +54,31 @@ public class DetectLoop {
             }
         }
         return false;
+    }
+
+    public ListNode startNode() {
+        ListNode pointerOne = head;
+        ListNode pointerTwo = head;
+
+        while (pointerOne != null && pointerOne.next != null) {
+            pointerOne = pointerOne.next.next;
+            pointerTwo = pointerTwo.next;
+            if (pointerOne == pointerTwo) {
+
+                return getStartingNode(pointerTwo);
+            }
+        }
+        return null;
+    }
+
+    private ListNode getStartingNode(ListNode pointerTwo) {
+        ListNode temp = head;
+        while (temp != pointerTwo) {
+            temp = temp.next;
+            pointerTwo = pointerTwo.next;
+
+        }
+        return temp;
     }
 
     public void createLoop() {
@@ -62,9 +102,10 @@ public class DetectLoop {
     }
 
     public static void main(String[] args) {
-        DetectLoop dl = new DetectLoop();
-        dl.createLoop();
-        System.out.println(dl.containsLoop());
-    }
+        FindStartOfLoop fl = new FindStartOfLoop();
+        fl.createLoop();
+        System.out.println(fl.containsLoop());
+        System.out.println(fl.startNode().data);
 
+    }
 }
