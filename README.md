@@ -88,7 +88,7 @@ Head -> [Data: 10] -> [Data: 8] -> [Data: 1] -> [Data: 11] -> [Data: 15] -> null
 
 ---
 
-## [Doubly Linked List](LinkedList/doubly-linked-list)
+### [Doubly Linked List](LinkedList/doubly-linked-list)
 
 ### Introduction
 
