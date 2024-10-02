@@ -33,23 +33,23 @@ Head -> [Data: 10] -> [Data: 8] -> [Data: 1] -> [Data: 11] -> [Data: 15] -> null
 
 ### Introduction
 
-A **Doubly Linked List** is a type of linked list where each node contains three components:
+A **Doubly Linked List** is a two way linked list where each node contains three components:
 
 1. **Data**: The value or information the node holds.
 2. **Next Pointer**: A reference (pointer) to the next node in the list.
 3. **Previous Pointer**: A reference (pointer) to the previous node in the list.
+   This structure allows us to traverse the list in **both forward and backward directions**.
 
-This structure allows us to traverse the list in **both forward and backward directions**.
+---
+
+<-- | Previous Node | Current Node | Next Node | -->
+--------------------ListNode--------------------------
 
 ### Key Differences from Singly Linked List:
 
 - **Singly Linked List** has only a **next pointer**, making traversal possible only in the forward direction.
 - **Doubly Linked List** has both **next** and **previous pointers**, making traversal possible in both **forward** and **backward** directions.
-
-### Advantages of Doubly Linked List:
-
-- **Bidirectional Traversal**: You can move forward and backward through the list.
-- **Node Deletion**: A node can be deleted without needing access to its previous node.
+- A node in **Singly Linked List** can only be deleted if we have a pointer to previous node, but in **Doubly Linked List** we can deelte even we dont have a pointer to it's previous node. since singly linked list move in forward direction so in order to break any chain or any node in between singly linked list we usually need a pointer to its previous node to delete the node after it but in doubly linked list as we have 2 pointer to traverse in forward and backward, therefore we don’t need any pointer to its previous node.
 
 ### Node Representation:
 
@@ -69,20 +69,24 @@ class Node {
 }
 ```
 
-### Diagram:
+### Advantages of Doubly Linked List:
+
+- **Bidirectional Traversal**: You can move forward and backward through the list.
+- **Node Deletion**: A node can be deleted without needing access to its previous node.
+
+### Node Diagram (with sample data):
 
 ```
-
-[null <- Node 1 <-> Node 2 <-> Node 3 <-> Node 4 -> null]
-
+null <- [10] <-> [20] <-> [30] <-> [40] -> null
 ```
 
-In this diagram:
+### Explanation:
 
-- **Node 1** is the head, with its previous pointer set to `null`.
-- **Node 4** is the tail, with its next pointer set to `null`.
+- **10** is the head, with its previous pointer set to `null`.
+- **40** is the tail, with its next pointer set to `null`.
 - All other nodes (e.g., Node 2 and Node 3) have both a next and previous pointer.
 
-[Demo Code](doubly-linked-list)
-
----
+- **Node 1** contains data `10`, and its previous pointer is `null` (it's the head), while its next pointer leads to Node 2 (data `20`).
+- **Node 2** contains data `20`, and its previous pointer points to Node 1 (data `10`), while its next pointer leads to Node 3 (data `30`).
+- **Node 3** contains data `30`, and its previous pointer points to Node 2 (data `20`), while its next pointer leads to Node 4 (data `40`).
+- **Node 4** contains data `40`, and its previous pointer points to Node 3 (data `30`), while its next pointer is `null`.
