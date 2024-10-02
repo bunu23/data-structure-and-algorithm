@@ -40,10 +40,9 @@ A **Doubly Linked List** is a two way linked list where each node contains three
 3. **Previous Pointer**: A reference (pointer) to the previous node in the list.
    This structure allows us to traverse the list in **both forward and backward directions**.
 
----
-
+```
 <-- | Previous Node | Current Node | Next Node | -->
---------------------ListNode--------------------------
+```
 
 ### Key Differences from Singly Linked List:
 
