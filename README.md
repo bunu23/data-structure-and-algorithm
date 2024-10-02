@@ -12,8 +12,6 @@
    - [Doubly Linked List](#doubly-linked-list)
    - [Circular Linked List](#circular-linked-list)
 
-[Back to TOC](#table-of-contents)
-
 ---
 
 ## Why Data Structures?
