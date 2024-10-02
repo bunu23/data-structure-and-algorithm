@@ -10,6 +10,9 @@
 4. [Linked List](#linked-list)
    - [Singly Linked List](#singly-linked-list)
    - [Doubly Linked List](#doubly-linked-list)
+   - [Circular Linked List](#circular-linked-list)
+
+[Back to TOC](#table-of-contents)
 
 ---
 
@@ -37,6 +40,8 @@ In non-linear data structures, elements are not arranged sequentially. They are 
 
 **Examples**: Trees, Graphs
 
+[Back to TOC](#table-of-contents)
+
 ---
 
 # [Array](Arrays)
@@ -56,6 +61,10 @@ An array is a linear data structure where elements are stored in contiguous memo
 - <u>**Access**:</u> Directly by index.
 - <u>**Traversal**:</u> Sequential from start to end.
 - <u>**Use Cases**:</u> Suitable for simple, ordered collections where direct access is needed.
+
+[Back to TOC](#table-of-contents)
+
+---
 
 # [Linked List](LinkedList)
 
@@ -85,6 +94,8 @@ A singly linked list is a data structure used for storing a sequence of nodes, w
 ```
 Head -> [Data: 10] -> [Data: 8] -> [Data: 1] -> [Data: 11] -> [Data: 15] -> null
 ```
+
+[Back to TOC](#table-of-contents)
 
 ---
 
@@ -148,3 +159,13 @@ null <- [10] <-> [20] <-> [30] <-> [40] -> null
 - **Node 2** contains data `20`, and its previous pointer points to Node 1 (data `10`), while its next pointer leads to Node 3 (data `30`).
 - **Node 3** contains data `30`, and its previous pointer points to Node 2 (data `20`), while its next pointer leads to Node 4 (data `40`).
 - **Node 4** contains data `40`, and its previous pointer points to Node 3 (data `30`), while its next pointer is `null`.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+### [Circular Linked List](LinkedList/circular-linked-list)
+
+[Back to TOC](#table-of-contents)
+
+---
