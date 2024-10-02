@@ -83,4 +83,6 @@ In this diagram:
 - **Node 4** is the tail, with its next pointer set to `null`.
 - All other nodes (e.g., Node 2 and Node 3) have both a next and previous pointer.
 
-### [Demo Code](doubly-linked-list)
+[Demo Code](doubly-linked-list)
+
+---
