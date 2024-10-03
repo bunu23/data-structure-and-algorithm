@@ -29,6 +29,8 @@ Head -> [Data: 10] -> [Data: 8] -> [Data: 1] -> [Data: 11] -> [Data: 15] -> null
 
 [Demo Code](singly-linked-list)
 
+---
+
 ## Doubly Linked List
 
 ### Introduction
@@ -89,6 +91,8 @@ null <- [10] <-> [20] <-> [30] <-> [40] -> null
 - **Node 2** contains data `20`, and its previous pointer points to Node 1 (data `10`), while its next pointer leads to Node 3 (data `30`).
 - **Node 3** contains data `30`, and its previous pointer points to Node 2 (data `20`), while its next pointer leads to Node 4 (data `40`).
 - **Node 4** contains data `40`, and its previous pointer points to Node 3 (data `30`), while its next pointer is `null`.
+
+[Demo Code](doubly-linked-list)
 
 ---
 
@@ -248,5 +252,7 @@ thirdNode.prev = secondNode;
   - Contains a `next` field pointing to the next node in the list.
 - **CircularDoublyLinkedListNode**:
   - Similar to the singly linked list node but includes a `prev` field that points to the previous node, allowing bidirectional traversal.
+
+[Demo code](circular-linked-list)
 
 ---
