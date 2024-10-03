@@ -142,4 +142,86 @@ The last node (Node 4) will point back to Node 1, like this:
 |__________________________________|
 ```
 
+Here's a section you can add to your README for the **Node Representation** in Circular Linked Lists. This will provide a clear explanation of how nodes are structured in both Circular Singly Linked Lists and Circular Doubly Linked Lists, along with example code.
+
+---
+
+## Node Representation
+
+### 1. **Node Class for Circular Singly Linked List**
+
+```java
+
+class CircularSinglyLinkedListNode {
+    int data;
+    CircularSinglyLinkedListNode next;
+
+    public CircularSinglyLinkedListNode(int data) {
+        this.data = data;
+        this.next = null; // Initially points to null
+    }
+}
+```
+
+### Example Usage
+
+To create and link nodes in a Circular Singly Linked List:
+
+```java
+CircularSinglyLinkedListNode firstNode = new CircularSinglyLinkedListNode(1);
+CircularSinglyLinkedListNode secondNode = new CircularSinglyLinkedListNode(2);
+CircularSinglyLinkedListNode thirdNode = new CircularSinglyLinkedListNode(3);
+
+
+firstNode.next = secondNode;
+secondNode.next = thirdNode;
+thirdNode.next = firstNode; // Circular link
+```
+
+### 2. **Node Class for Circular Doubly Linked List**
+
+```java
+
+class CircularDoublyLinkedListNode {
+    int data;
+    CircularDoublyLinkedListNode next; // Pointer to the next node
+    CircularDoublyLinkedListNode prev; // Pointer to the previous node
+
+    // Constructor
+    public CircularDoublyLinkedListNode(int data) {
+        this.data = data;
+        this.next = null;
+        this.prev = null;
+    }
+}
+```
+
+### Example Usage
+
+To create and link nodes in a Circular Doubly Linked List:
+
+```java
+
+CircularDoublyLinkedListNode firstNode = new CircularDoublyLinkedListNode(1);
+CircularDoublyLinkedListNode secondNode = new CircularDoublyLinkedListNode(2);
+CircularDoublyLinkedListNode thirdNode = new CircularDoublyLinkedListNode(3);
+
+
+firstNode.next = secondNode;
+secondNode.next = thirdNode;
+thirdNode.next = firstNode; // Circular link
+
+firstNode.prev = thirdNode; // Linking back for circular doubly
+secondNode.prev = firstNode;
+thirdNode.prev = secondNode;
+```
+
+### Explanation
+
+- **CircularSinglyLinkedListNode**:
+  - Contains an integer `data` field for storing the value.
+  - Contains a `next` field pointing to the next node in the list.
+- **CircularDoublyLinkedListNode**:
+  - Similar to the singly linked list node but includes a `prev` field that points to the previous node, allowing bidirectional traversal.
+
 ---
