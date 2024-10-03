@@ -89,3 +89,57 @@ null <- [10] <-> [20] <-> [30] <-> [40] -> null
 - **Node 2** contains data `20`, and its previous pointer points to Node 1 (data `10`), while its next pointer leads to Node 3 (data `30`).
 - **Node 3** contains data `30`, and its previous pointer points to Node 2 (data `20`), while its next pointer leads to Node 4 (data `40`).
 - **Node 4** contains data `40`, and its previous pointer points to Node 3 (data `30`), while its next pointer is `null`.
+
+---
+
+## Circular Linked List
+
+A **Circular Linked List** is a variation of a linked list where the last node points back to the first node instead of pointing to `null`. This forms a circular structure, allowing continuous traversal of the list.
+
+### Key Characteristics
+
+1. **Structure**:
+
+   - Each node in a circular linked list contains data and a reference (or pointer) to the next node.
+   - In the case of a circular singly linked list, the last node's next pointer points back to the head node, creating a loop.
+
+2. **Types**:
+
+   - **Circular Singly Linked List**: Each node points to the next node, and the last node points to the first node.
+   - **Circular Doubly Linked List**: Each node has two pointers (next and previous), allowing traversal in both directions. The last node's next pointer points to the head, and the head's previous pointer points to the last node.
+
+3. **Head and Tail**:
+
+   - In circular linked lists, you typically keep track of the **head** (the first node) and possibly the **tail** (the last node) for efficient insertion and deletion operations.
+
+4. **Traversal**:
+   - Unlike regular linked lists, where you reach the end of the list (null), in a circular linked list, you can continue traversing indefinitely from any node until you return to the starting point.
+
+### Advantages
+
+- **Efficient Insertions and Deletions**: Operations at both ends can be performed in constant time if you maintain pointers to both the head and tail.
+- **No Null References**: There’s no need to check for null pointers while traversing, making certain algorithms simpler.
+
+### Use Cases
+
+- **Round-Robin Scheduling**: Often used in operating systems for process scheduling.
+- **Circular Buffers**: Useful in situations where data is continuously produced and consumed, like in streaming applications.
+- **Game Development**: In games, to manage players or resources that need to be cycled through repeatedly.
+
+### Example
+
+In a circular singly linked list, if you have the following nodes:
+
+- Node 1 → Node 2 → Node 3 → Node 4
+
+The last node (Node 4) will point back to Node 1, like this:
+
+```plaintext
+      +-------+
+      |       |
++-----> [1] -> [2] -> [3] -> [4] --+
+|     +-------+                    |
+|__________________________________|
+```
+
+---
