@@ -164,6 +164,8 @@ null <- [10] <-> [20] <-> [30] <-> [40] -> null
 
 [Back to TOC](#table-of-contents)
 
+---
+
 ### [Circular Linked List](LinkedList/circular-linked-list)
 
 A Circular Linked List is a variation of a linked list where the last node points back to the first node instead of pointing to null. This forms a circular structure, allowing continuous traversal of the list.
