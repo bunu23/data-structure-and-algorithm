@@ -170,7 +170,7 @@ null <- [10] <-> [20] <-> [30] <-> [40] -> null
 
 A Circular Linked List is a variation of a linked list where the last node points back to the first node instead of pointing to null. This forms a circular structure, allowing continuous traversal of the list.
 
-#### [Circular Singly Linked List](circular-singly-linked-list)
+#### [Circular Singly Linked List](LinkedList/circular-singly-linked-list)
 
 ##### What is Circular Singly Linked List ?
 
@@ -198,7 +198,7 @@ Here, the **last node (16)** points to the **head node (1)**, forming a circular
 
 ---
 
-#### [Circular Doubly Linked List](circular-doubly-linked-list)
+#### [Circular Doubly Linked List](LinkedList/circular-doubly-linked-list)
 
 ##### What is Circular Doubly Linked List ?
 
