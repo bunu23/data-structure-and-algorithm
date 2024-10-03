@@ -196,8 +196,6 @@ Here, the **last node (16)** points to the **head node (1)**, forming a circular
 
 [Back to TOC](#table-of-contents)
 
----
-
 #### [Circular Doubly Linked List](LinkedList/circular-linked-list/circular-doubly-linked-list)
 
 ##### What is Circular Doubly Linked List ?
