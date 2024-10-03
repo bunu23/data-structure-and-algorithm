@@ -142,10 +142,6 @@ The last node (Node 4) will point back to Node 1, like this:
 |__________________________________|
 ```
 
-Here's a section you can add to your README for the **Node Representation** in Circular Linked Lists. This will provide a clear explanation of how nodes are structured in both Circular Singly Linked Lists and Circular Doubly Linked Lists, along with example code.
-
----
-
 ## Node Representation
 
 ### 1. **Node Class for Circular Singly Linked List**
