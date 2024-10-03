@@ -11,6 +11,8 @@
    - [Singly Linked List](#singly-linked-list)
    - [Doubly Linked List](#doubly-linked-list)
    - [Circular Linked List](#circular-linked-list)
+     - [Circular Singly Linked List](#circular-singly-linked-list)
+     - [Circular Doubly Linked List](#circular-doubly-linked-list)
 
 ---
 
@@ -65,6 +67,8 @@ An array is a linear data structure where elements are stored in contiguous memo
 ---
 
 # [Linked List](LinkedList)
+
+A linked list is a data structure consisting of a sequence of nodes. Each node contains data and one or more pointers to the next (and possibly previous) nodes in the sequence.
 
 ### [Singly Linked List](LinkedList/singly-linked-list)
 
@@ -163,6 +167,62 @@ null <- [10] <-> [20] <-> [30] <-> [40] -> null
 ---
 
 ### [Circular Linked List](LinkedList/circular-linked-list)
+
+A Circular Linked List is a variation of a linked list where the last node points back to the first node instead of pointing to null. This forms a circular structure, allowing continuous traversal of the list.
+
+#### Circular Singly Linked List
+
+### What is Circular Singly Linked List ?
+
+In a **Circular Singly Linked List**, each node points to the next node, similar to a singly linked list. However, instead of the last node pointing to `null`, it points back to the **head node**, forming a chain.
+
+### Key Differences from Singly Linked List
+
+- The **last node's next pointer** points to the first node, not `null`.
+- A **last pointer** is maintained, making operations like insertion or deletion at the end of the list more efficient.
+
+### Diagram Representation
+
+```plaintext
+Head -> [1] -> [8] -> [10] -> [16] -> (points back to Head)
+```
+
+Here, the **last node (16)** points to the **head node (1)**, forming a circular structure.
+
+### Benefits:
+
+- **Efficient Insertion/Deletion**: By keeping track of the last node, we can insert or delete a node at the end of the list in constant time.
+- **Traversal**: Reaching the first node from the last node is straightforward as `last.next` points to `head`.
+
+[Back to TOC](#table-of-contents)
+
+---
+
+#### Circular Doubly Linked List
+
+### What is Circular Doubly Linked List ?
+
+A **Circular Doubly Linked List** is an extension of a doubly linked list where each node has a **next** and a **previous pointer**. In this circular version, the **last node's next pointer** points to the head, and the **first node's previous pointer** points to the last node.
+
+### Diagram Representation
+
+```plaintext
+[Head] <-> [8] <-> [10] <-> [16] <-> (points back to Head)
+```
+
+### Key Differences:
+
+- Nodes maintain pointers in **both directions**.
+- The **first node’s previous pointer** points to the **last node**, and the **last node's next pointer** points to the **first node**.
+
+### Benefits:
+
+- **Efficient traversal** in both directions.
+- Like the Circular Singly Linked List, it allows constant time insertion and deletion.
+
+[Back to TOC](#table-of-contents)
+
+---
 
 [Back to TOC](#table-of-contents)
 
