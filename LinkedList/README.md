@@ -151,31 +151,60 @@ Here's a section you can add to your README for the **Node Representation** in C
 ### 1. **Node Class for Circular Singly Linked List**
 
 ```java
+// Implementing circular singly linked list
+public class CircularSinglyLinkedList {
 
-class CircularSinglyLinkedListNode {
-    int data;
-    CircularSinglyLinkedListNode next;
+    private ListNode last; // Reference to the last node
+    private int length; // Holds the size of the circular singly linked list
 
-    public CircularSinglyLinkedListNode(int data) {
-        this.data = data;
-        this.next = null; // Initially points to null
+    private class ListNode {
+        private ListNode next; // Pointer to the next node
+        private int data; // Data stored in the node
+
+        public ListNode(int data) {
+            this.data = data; // Constructor to initialize the node with data
+        }
+    }
+
+    // Constructor to initialize the circular singly linked list
+    public CircularSinglyLinkedList() {
+        last = null; // Initially, the list is empty
+        length = 0; // Length is set to 0
+    }
+
+    // Returns the length of the list
+    public int length() {
+        return length;
+    }
+
+    // Checks if the list is empty
+    public boolean isEmpty() {
+        return length == 0; // Returns true if length is 0
+    }
+
+    // Creates a circular singly linked list with initial nodes
+    public void createCircularLL() {
+        ListNode first = new ListNode(1);
+        ListNode second = new ListNode(3);
+        ListNode third = new ListNode(5);
+        ListNode fourth = new ListNode(6);
+
+        // Linking nodes together
+        first.next = second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = first; // Last node points back to the first node
+
+        last = fourth; // Set the last node to the fourth node
+
+    }
+
+    public static void main(String[] args) {
+        CircularSinglyLinkedList csll = new CircularSinglyLinkedList(); // Create a new Circular Singly Linked List
+        csll.createCircularLL(); // Create the circular linked list
+
     }
 }
-```
-
-### Example Usage
-
-To create and link nodes in a Circular Singly Linked List:
-
-```java
-CircularSinglyLinkedListNode firstNode = new CircularSinglyLinkedListNode(1);
-CircularSinglyLinkedListNode secondNode = new CircularSinglyLinkedListNode(2);
-CircularSinglyLinkedListNode thirdNode = new CircularSinglyLinkedListNode(3);
-
-
-firstNode.next = secondNode;
-secondNode.next = thirdNode;
-thirdNode.next = firstNode; // Circular link
 ```
 
 ### 2. **Node Class for Circular Doubly Linked List**
