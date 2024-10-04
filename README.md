@@ -273,21 +273,6 @@ It is based on the Last In, First Out (LIFO) principle, meaning that the last el
      int topElement = stack.peek(); // returns 10
      ```
 
-4. **IsEmpty**:
-
-   - Checks if the stack is empty.
-   - Example:
-     ```java
-     boolean empty = stack.isEmpty(); // returns false
-     ```
-
-5. **Size**:
-   - Returns the number of elements in the stack.
-   - Example:
-     ```java
-     int size = stack.size(); // returns 2
-     ```
-
 ### Implementation
 
 1. **Array-Based Stack**:
