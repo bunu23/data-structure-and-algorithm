@@ -13,6 +13,7 @@
    - [Circular Linked List](#circular-linked-list)
      - [Circular Singly Linked List](#circular-singly-linked-list)
      - [Circular Doubly Linked List](#circular-doubly-linked-list)
+5. [Stack](#stack)
 
 ---
 
@@ -221,6 +222,100 @@ A **Circular Doubly Linked List** is an extension of a doubly linked list where 
 [Back to TOC](#table-of-contents)
 
 ---
+
+[Back to TOC](#table-of-contents)
+
+---
+
+# [Stack](stack)
+
+A **stack** is a linear data structure that follows a specific order for operations.
+It is based on the Last In, First Out (LIFO) principle, meaning that the last element added to the stack is the first one to be removed. It is an ordered list in which insertion and deletion are done in one end i.e top.
+
+### Key Features
+
+1. **LIFO Structure**:
+
+   - The last element pushed onto the stack is the first one to be popped off.
+   - Visualizing it as a stack of plates, you can only add or remove the top plate.
+
+2. **Dynamic Size**:
+
+   - Stacks can grow and shrink as needed, making them flexible in terms of memory usage.
+
+3. **Access**:
+   - Elements can only be accessed from the top of the stack.
+
+### Basic Operations
+
+1. **Push**:
+
+   - Adds an element to the top of the stack.
+   - Example:
+     ```java
+     stack.push(10);
+     stack.push(20);
+     ```
+
+2. **Pop**:
+
+   - Removes the top element from the stack and returns it.
+   - Example:
+     ```java
+     int topElement = stack.pop(); // returns 20
+     ```
+
+3. **Peek (or Top)**:
+
+   - Returns the top element without removing it.
+   - Example:
+     ```java
+     int topElement = stack.peek(); // returns 10
+     ```
+
+4. **IsEmpty**:
+
+   - Checks if the stack is empty.
+   - Example:
+     ```java
+     boolean empty = stack.isEmpty(); // returns false
+     ```
+
+5. **Size**:
+   - Returns the number of elements in the stack.
+   - Example:
+     ```java
+     int size = stack.size(); // returns 2
+     ```
+
+### Implementation
+
+1. **Array-Based Stack**:
+
+   - A fixed-size array is used to store the elements.
+   - May lead to stack overflow if the limit is exceeded.
+
+2. **Linked List-Based Stack**:
+   - A linked list is used, where each node points to the next node.
+   - More flexible, as it grows and shrinks dynamically.
+
+### Diagram
+
+```plaintext
+      +---+
+      | 3 |  <-- Top (Last In)
+      +---+
+      | 2 |
+      +---+
+      | 1 |
+      +---+
+      |  1 |  <-- Bottom (First In)
+      +---+
+```
+
+- **Top**: The top of the stack (in this case, the number `3`) is the last element added and will be the first one to be removed when a pop operation is performed.
+- **Elements**: The stack contains elements (`1`, `2`, `3`) in the order they were added, with `1` being the first element added and at the bottom of the stack.
+- **Empty Space**: The bottom of the stack indicates that there are no elements below `1`.
 
 [Back to TOC](#table-of-contents)
 
