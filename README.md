@@ -314,8 +314,7 @@ It is based on the Last In, First Out (LIFO) principle, meaning that the last el
 ```
 
 - **Top**: The top of the stack (in this case, the number `3`) is the last element added and will be the first one to be removed when a pop operation is performed.
-- **Elements**: The stack contains elements (`1`, `2`, `3`) in the order they were added, with `1` being the first element added and at the bottom of the stack.
-- **Empty Space**: The bottom of the stack indicates that there are no elements below `1`.
+- **Elements**: The stack contains elements (`1`,`1`, `2`, `3`) in the order they were added, with `1` being the first element added and at the bottom of the stack.
 
 [Back to TOC](#table-of-contents)
 
