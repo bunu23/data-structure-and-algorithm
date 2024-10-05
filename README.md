@@ -14,6 +14,7 @@
      - [Circular Singly Linked List](#circular-singly-linked-list)
      - [Circular Doubly Linked List](#circular-doubly-linked-list)
 5. [Stack](#stack)
+6. [Queue](#queue)
 
 ---
 
@@ -300,6 +301,62 @@ It is based on the Last In, First Out (LIFO) principle, meaning that the last el
 [Back to TOC](#table-of-contents)
 
 ---
+
+# [Queue](queue)
+
+A **Queue** is a linear data structure that follows the **First In, First Out (FIFO)** principle. This means that the element inserted first is the one to be removed first, much like a line of people waiting for a service. It is an ordered list in which insertion are done at one end called rear and deletion on other end called front.
+
+## Key Operations:
+
+1. **Enqueue**: Add an element to the end of the queue.
+2. **Dequeue**: Remove the element from the front of the queue.
+
+## Queue Structure:
+
+```
++------+------+------+------+
+|  10  |  20  |  30  |  40  |
++------+------+------+------+
+Front                     Rear
+```
+
+1. **Enqueue Operation**:
+
+   - Inserts elements at the rear end.
+   - After inserting 50:
+
+   ```
+   +------+------+------+------+------+
+   |  10  |  20  |  30  |  40  |  50  |
+   +------+------+------+------+------+
+   Front                           Rear
+   ```
+
+2. **Dequeue Operation**:
+
+   - Removes the element from the front.
+   - After dequeuing 10:
+
+   ```
+   +------+------+------+------+
+   |  20  |  30  |  40  |  50  |
+   +------+------+------+------+
+   Front                 Rear
+   ```
+
+## Diagrammatic Representation:
+
+```plaintext
+Initial Queue (Enqueue Operations):
+          +-------+ Enqueue -> +-------+ Enqueue -> +-------+
+[Front]   |  10   |            |  20   |            |  30   | [Rear]
+          +-------+            +-------+            +-------+
+
+After Dequeue (Dequeue Operations):
+         +-------+ Dequeue -> +-------+ Dequeue -> +-------+
+[Front]  |  20   |            |  30   |            | Empty | [Rear]
+         +-------+            +-------+            +-------+
+```
 
 [Back to TOC](#table-of-contents)
 
