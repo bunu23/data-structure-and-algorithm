@@ -439,11 +439,11 @@ A **Binary Tree** is a type of tree in which each node has at most two children,
 - Node **6** is children of **3**.
 - Nodes **4** , **5** and **6** are leaf nodes.
 
-## Tree Traversal
+## **Tree Traversal**
 
 Traversal refers to visiting all the nodes in a tree systematically. There are three main types of tree traversal:
 
-### 1. **In-order Traversal**
+### 1. In-order Traversal
 
 The nodes are recursively visited in the following order: **Left child → Root → Right child**.
 
@@ -463,7 +463,7 @@ The nodes are recursively visited in the following order: **Root → Left child 
 [10] [5] [3] [7] [20] [30]
 ```
 
-### 3. **Post-order Traversal**
+### 3. Post-order Traversal
 
 The nodes are recursively visited in the following order: **Left child → Right child → Root**.
 
