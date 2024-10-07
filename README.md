@@ -385,13 +385,35 @@ After Dequeue (Dequeue Operations):
 - **Degree**: The number of children a node has.
 - **Edge**: The connection between one node and another.
 
-![Diagram](https://github.com/user-attachments/assets/cb42a672-b407-4b51-980a-f3816db90f78)
-
-- **Root**: The topmost node, labeled as `[Root]`, with its depth and degree shown.
-- **Edges**: Connections from parent nodes to child nodes.
-- **Parent and Child Relationships**: Clearly illustrated to show which nodes are parents and which are their children.
-- **Leaf Nodes**: Marked with `(Leaf)` and indicating their degree as `0`.
-- **Depth and Degree**: Clearly indicated for each node for better understanding.
+```plaintext
+                      +----------------------+
+                      |        [Root]        |
+                      |     (Depth: 0)       |
+                      |     (Degree: 2)      |
+                      +----------+-----------+
+                                 |
+               +-----------------+-----------------+
+               |                                   |
+      +--------+--------+                  +-------+-------+
+      |      [A]       |                  |      [B]      |
+      | (Depth: 1)     |                  | (Depth: 1)    |
+      | (Degree: 2)    |                  | (Degree: 1)   |
+      +--------+--------+                  +-------+-------+
+               |                                    |
+        +------+-------+                  +---------+---------+
+        |              |                  |                   |
+   +----+----+   +-----+-----+    +------+-----+     +-------+-------+
+   |   [C]   |   |    [D]    |    |     [E]    |     |   (Leaf)      |
+   |(Depth: 2)|   |(Depth: 2) |    | (Depth: 2)  |     | (Degree: 0)   |
+   |(Degree: 0)|   |(Degree: 0)|    | (Degree: 0) |     +---------------+
+   +----+-----+    +-----+-----+    +------+------+
+        |                   |
+   +----+----+        +----+----+
+   |   [F]   |        |   [G]   |
+   | (Leaf)  |        | (Leaf)  |
+   |(Degree: 0)|      |(Degree: 0)|
+   +-----------+      +-----------+
+```
 
 [Back to TOC](#table-of-contents)
 
