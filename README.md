@@ -453,7 +453,7 @@ The nodes are recursively visited in the following order: **Left child → Root 
 [3] [5] [7] [10] [20] [30]
 ```
 
-### 2. [**Pre-order Traversal**](<(tree/PreOrderTraversal.java)>)
+### 2. [Pre-order Traversal](tree/PreOrderTraversal.java)
 
 The nodes are recursively visited in the following order: **Root → Left child → Right child**.
 
