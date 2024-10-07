@@ -401,17 +401,19 @@ After Dequeue (Dequeue Operations):
       +--------+--------+                  +-------+-------+
                |                                    |
         +------+-------+                  +---------+---------+
-        |              |                  |                   |
-   +----+----+   +-----+-----+    +------+-----+     +-------+-------+
-   |   [C]   |   |    [D]    |    |     [E]    |     |   (Leaf)      |
-   |(Depth: 2)|   |(Depth: 2) |    | (Depth: 2)  |     | (Degree: 0)   |
-   |(Degree: 0)|   |(Degree: 0)|    | (Degree: 0) |     +---------------+
+        |              |                  |
+   +----+----+   +-----+-----+    +------+-----+
+   |   [C]   |   |    [D]    |    |     [E]     |
+   |(Depth: 2)|   |(Depth: 2) |   | (Depth: 2)  |
+   |(Degree: 0)|   |(Degree: 0)|  | (Degree: 0) |
+                                  |     (Leaf)  |
    +----+-----+    +-----+-----+    +------+------+
         |                   |
    +----+----+        +----+----+
-   |   [F]   |        |   [G]   |
-   | (Leaf)  |        | (Leaf)  |
+   |   [F]     |      |   [G]     |
+   | (Leaf)    |      | (Leaf)    |
    |(Degree: 0)|      |(Degree: 0)|
+    |(Depth: 3)|      |(Depth: 3) |
    +-----------+      +-----------+
 ```
 
@@ -437,7 +439,7 @@ A **Binary Tree** is a type of tree in which each node has at most two children,
 - Node **6** is children of **3**.
 - Nodes **4** , **5** and **6** are leaf nodes.
 
-### Tree Traversal
+## Tree Traversal
 
 Traversal refers to visiting all the nodes in a tree systematically. There are three main types of tree traversal:
 
@@ -451,7 +453,7 @@ The nodes are recursively visited in the following order: **Left child → Root 
 [3] [5] [7] [10] [20] [30]
 ```
 
-### 2. **Pre-order Traversal**
+### 2. [**Pre-order Traversal**](<(tree/PreOrderTraversal.java)>)
 
 The nodes are recursively visited in the following order: **Root → Left child → Right child**.
 
