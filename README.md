@@ -15,6 +15,7 @@
      - [Circular Doubly Linked List](#circular-doubly-linked-list)
 5. [Stack](#stack)
 6. [Queue](#queue)
+7. [Tree](#tree)
 
 ---
 
@@ -361,3 +362,91 @@ After Dequeue (Dequeue Operations):
 [Back to TOC](#table-of-contents)
 
 ---
+
+# [Tree](tree)
+
+- A **Tree** is non-linear data structure used for storing data,often used to represent hierarchical structure with a parent node called root and many levels of additional nodes.
+- Unlike arrays, linked lists, stacks, and queues, which are linear structures, trees are hierarchical, consisting of nodes connected by edges.
+- It is made up of nodes and edges without having any cycle. Each node in a ttree can point to n number of nodes in a tree.
+- The topmost node is called the root, and each node can have multiple child nodes.
+
+[Back to TOC](#table-of-contents)
+
+## Key Concepts
+
+- **Node**: Each element in a tree is called a node. It contains data and references (or pointers) to its child nodes.
+- **Root**: The topmost node in the tree, which does not have a parent.
+- **Parent**: A node that has one or more child nodes.
+- **Child**: A node directly connected to its parent when moving away from the root.
+- **Leaf**: A node with no children.
+- **Subtree**: A tree formed by a node and its descendants.
+- **Depth**: The number of edges from the root node to a given node.
+- **Height**: The number of edges on the longest path from a node to a leaf.
+- **Degree**: The number of children a node has.
+- **Edge**: The connection between one node and another.
+
+![Diagram](https://github.com/user-attachments/assets/cb42a672-b407-4b51-980a-f3816db90f78)
+
+- **Root**: The topmost node, labeled as `[Root]`, with its depth and degree shown.
+- **Edges**: Connections from parent nodes to child nodes.
+- **Parent and Child Relationships**: Clearly illustrated to show which nodes are parents and which are their children.
+- **Leaf Nodes**: Marked with `(Leaf)` and indicating their degree as `0`.
+- **Depth and Degree**: Clearly indicated for each node for better understanding.
+
+[Back to TOC](#table-of-contents)
+
+## **Binary Tree**
+
+A **Binary Tree** is a type of tree in which each node has at most two children, referred to as the **left child** and the **right child**.
+
+#### Example:
+
+```
+        [1]
+       /   \
+     [2]   [3]
+    /   \     \
+  [4]   [5]   [6]
+```
+
+- Node **1** is the root.
+- Nodes **2** and **3** are children of **1**.
+- Nodes **4** and **5** are children of **2**.
+- Node **6** is children of **3**.
+- Nodes **4** , **5** and **6** are leaf nodes.
+
+### Tree Traversal
+
+Traversal refers to visiting all the nodes in a tree systematically. There are three main types of tree traversal:
+
+### 1. **In-order Traversal**
+
+The nodes are recursively visited in the following order: **Left child → Root → Right child**.
+
+#### Example (in-order traversal of the Binary Search Tree):
+
+```
+[3] [5] [7] [10] [20] [30]
+```
+
+### 2. **Pre-order Traversal**
+
+The nodes are recursively visited in the following order: **Root → Left child → Right child**.
+
+#### Example (pre-order traversal of the Binary Search Tree):
+
+```
+[10] [5] [3] [7] [20] [30]
+```
+
+### 3. **Post-order Traversal**
+
+The nodes are recursively visited in the following order: **Left child → Right child → Root**.
+
+#### Example (post-order traversal of the Binary Search Tree):
+
+```
+[3] [7] [5] [30] [20] [10]
+```
+
+[Back to TOC](#table-of-contents)
