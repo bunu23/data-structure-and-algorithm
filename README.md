@@ -443,7 +443,7 @@ A **Binary Tree** is a type of tree in which each node has at most two children,
 
 Traversal refers to visiting all the nodes in a tree systematically. There are three main types of tree traversal:
 
-### 1. In-order Traversal
+### 1. [In-order Traversal](tree/InOrderTraversal.java)
 
 ```
         [1]
