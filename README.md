@@ -445,12 +445,20 @@ Traversal refers to visiting all the nodes in a tree systematically. There are t
 
 ### 1. In-order Traversal
 
+```
+        [1]
+       /   \
+     [2]   [3]
+    /   \     \
+  [4]   [5]   [6]
+```
+
 The nodes are recursively visited in the following order: **Left child → Root → Right child**.
 
 #### Example (in-order traversal of the Binary Search Tree):
 
 ```
-[3] [5] [7] [10] [20] [30]
+[4] [2] [5] [1] [3] [6]
 ```
 
 ### 2. [Pre-order Traversal](tree/PreOrderTraversal.java)
@@ -460,7 +468,7 @@ The nodes are recursively visited in the following order: **Root → Left child 
 #### Example (pre-order traversal of the Binary Search Tree):
 
 ```
-[10] [5] [3] [7] [20] [30]
+[1], [2], [4], [5], [3], [6]
 ```
 
 ### 3. Post-order Traversal
@@ -470,7 +478,7 @@ The nodes are recursively visited in the following order: **Left child → Right
 #### Example (post-order traversal of the Binary Search Tree):
 
 ```
-[3] [7] [5] [30] [20] [10]
+ [4], [5], [2], [6], [3], [1]
 ```
 
 [Back to TOC](#table-of-contents)
