@@ -471,7 +471,7 @@ The nodes are recursively visited in the following order: **Root → Left child 
 [1], [2], [4], [5], [3], [6]
 ```
 
-### 3. Post-order Traversal
+### 3. [Post-order Traversal](tree/PostOrderTraversal.java)
 
 The nodes are recursively visited in the following order: **Left child → Right child → Root**.
 
