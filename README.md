@@ -481,4 +481,35 @@ The nodes are recursively visited in the following order: **Left child → Right
  [4], [5], [2], [6], [3], [1]
 ```
 
+### [Level Order Traversal of Binary Tree](tree/LevelOrderTraversal.java)
+
+Order of Traversal: Level by Level
+
+Level order traversal visits all nodes at the present depth level before moving on to nodes at the next depth level. This is typically done using a queue and is also known as breadth-first traversal.
+
+**Example**:
+
+```
+      1
+     / \
+    2   3
+   / \   \
+  4   5   6
+```
+
+The level order traversal would yield:
+
+```
+1, 2, 3, 4, 5, 6
+```
+
+### Summary of Differences
+
+| Traversal Method | Order of Traversal | Use Cases                                                       |
+| ---------------- | ------------------ | --------------------------------------------------------------- |
+| Preorder         | Root, Left, Right  | Creating a copy of the tree, prefix notation                    |
+| Inorder          | Left, Root, Right  | Sorting in a BST, infix notation                                |
+| Postorder        | Left, Right, Root  | Deleting trees, postfix notation                                |
+| Level Order      | Level by Level     | BFS applications, finding the shortest path in unweighted trees |
+
 [Back to TOC](#table-of-contents)
