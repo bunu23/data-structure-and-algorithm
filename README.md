@@ -16,6 +16,8 @@
 5. [Stack](#stack)
 6. [Queue](#queue)
 7. [Tree](#tree)
+   - [Binary Tree](#binary-tree)
+   - [Tree Traversal](#tree-traversal)
 
 ---
 
@@ -503,13 +505,13 @@ The level order traversal would yield:
 1, 2, 3, 4, 5, 6
 ```
 
-### Summary of Differences
+### Summary
 
-| Traversal Method | Order of Traversal | Use Cases                                                       |
-| ---------------- | ------------------ | --------------------------------------------------------------- |
-| Preorder         | Root, Left, Right  | Creating a copy of the tree, prefix notation                    |
-| Inorder          | Left, Root, Right  | Sorting in a BST, infix notation                                |
-| Postorder        | Left, Right, Root  | Deleting trees, postfix notation                                |
-| Level Order      | Level by Level     | BFS applications, finding the shortest path in unweighted trees |
+| Traversal Method | Order of Traversal |
+| ---------------- | ------------------ | --- |
+| Preorder         | Root, Left, Right  |
+| Inorder          | Left, Root, Right  |     |
+| Postorder        | Left, Right, Root  |
+| Level Order      | Level by Level     |
 
 [Back to TOC](#table-of-contents)
