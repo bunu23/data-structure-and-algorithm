@@ -443,7 +443,7 @@ A **Binary Tree** is a type of tree in which each node has at most two children,
 
 Traversal refers to visiting all the nodes in a tree systematically. There are three main types of tree traversal:
 
-### 1. [In-order Traversal](tree/InOrderTraversal.java)
+### [In-order Traversal](tree/InOrderTraversal.java)
 
 ```
         [1]
@@ -461,7 +461,7 @@ The nodes are recursively visited in the following order: **Left child → Root 
 [4] [2] [5] [1] [3] [6]
 ```
 
-### 2. [Pre-order Traversal](tree/PreOrderTraversal.java)
+### [Pre-order Traversal](tree/PreOrderTraversal.java)
 
 The nodes are recursively visited in the following order: **Root → Left child → Right child**.
 
@@ -471,7 +471,7 @@ The nodes are recursively visited in the following order: **Root → Left child 
 [1], [2], [4], [5], [3], [6]
 ```
 
-### 3. [Post-order Traversal](tree/PostOrderTraversal.java)
+### [Post-order Traversal](tree/PostOrderTraversal.java)
 
 The nodes are recursively visited in the following order: **Left child → Right child → Root**.
 
@@ -481,7 +481,7 @@ The nodes are recursively visited in the following order: **Left child → Right
  [4], [5], [2], [6], [3], [1]
 ```
 
-### [Level Order Traversal of Binary Tree](tree/LevelOrderTraversal.java)
+### [Level Order Traversal ](tree/LevelOrderTraversal.java)
 
 Order of Traversal: Level by Level
 
