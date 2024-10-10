@@ -508,9 +508,9 @@ The level order traversal would yield:
 ### Summary
 
 | Traversal Method | Order of Traversal |
-| ---------------- | ------------------ | --- |
+| ---------------- | ------------------ |
 | Preorder         | Root, Left, Right  |
-| Inorder          | Left, Root, Right  |     |
+| Inorder          | Left, Root, Right  |
 | Postorder        | Left, Right, Root  |
 | Level Order      | Level by Level     |
 
