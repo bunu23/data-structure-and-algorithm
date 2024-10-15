@@ -564,6 +564,7 @@ supports following operations:
   | **Decrease Key**     | Decrease the priority of an element in the queue (for Min PQ)              | O(log n)                              |
 
 **Implementation**
+
 Priority queues can be implemented in several ways. Some common approaches include:
 
 - **Binary Heap** (most common implementation):
@@ -592,6 +593,198 @@ Priority queues can be implemented in several ways. Some common approaches inclu
 - **Priority Queue vs. Heap**:
   - A heap is a specific implementation of a priority queue (binary heap), where elements are arranged based on their priorities.
 
+[Back to TOC](#table-of-contents)
+
 ---
 
 # Binary Heap
+
+A binary heap is a complete binary tree in which each node value is greater than or equal to or less than or equal to values of its children.
+It ensures that the highest (or lowest) priority element can be accessed quickly, while still allowing for efficient insertion and deletion of elements.
+
+we can say a binary heap is a data structure that helps us in implementing priority queue operations efficiently.
+
+### 1. **What is a Binary Heap?**
+
+A **binary heap** is a **complete binary tree** that satisfies two properties:
+
+- **Heap Property**: The value of each node must be greater than or equal to (for a max heap) or less than or equal to (for a min heap) the values of its children.
+- **Complete Tree Property**: Every level of the tree must be fully filled, except possibly for the last level, which is filled from left to right.
+
+There are two types of binary heaps:
+
+- **Min Heap**: The parent node is always smaller than or equal to its children.
+- **Max Heap**: The parent node is always larger than or equal to its children.
+
+#### 1.1. **Min-Heap Example:**
+
+```plaintext
+          10
+         /  \
+        15   20
+       / \   /
+      30  40 50
+```
+
+In a **min-heap**, the root node (10) is the smallest element, and every parent node is smaller than its children.
+
+#### 1.2. **Max-Heap Example:**
+
+```plaintext
+          50
+         /  \
+        30   40
+       / \   /
+      20  10 15
+```
+
+In a **max-heap**, the root node (50) is the largest element, and every parent node is larger than its children.
+
+### 2. **Properties of Binary Heaps**
+
+- **Complete Binary Tree**:
+  A complete binary tree is a binary tree where all levels are completely filled except the last level and last level has nodes in such a way that left side is never empty.
+- **Heap Order Property**:
+  - In a **min-heap**, the key of each node is greater than or equal to the key of its parent.
+  - In a **max-heap**, the key of each node is smaller than or equal to the key of its parent.
+
+### 3. **Array Representation of Binary Heap**
+
+One of the key benefits of binary heaps is that they can be efficiently represented using an array, rather than an actual tree structure.
+This is possible because a binary heap is a complete binary tree.
+
+#### 3.1. **Indexing in an Array**:
+
+- **Root**: The root of the heap is at index `0`.
+- **Parent-Child Relationships**:
+  - The parent of a node at index `i` is at index `(i - 1) // 2`.
+  - The left child of a node at index `i` is at index `2 * i + 1`.
+  - The right child of a node at index `i` is at index `2 * i + 2`.
+
+#### 3.2. **Example**:
+
+Consider this min-heap:
+
+```plaintext
+          10
+         /  \
+        15   30
+       / \   / \
+      40 50 20 35
+```
+
+The corresponding array representation would be:
+
+```plaintext
+[10, 15, 30, 40, 50, 20, 35]
+```
+
+- The parent of the node at index `2` (value 30) is at index `(2 - 1) // 2 = 0` (value 10).
+- The left child of the node at index `1` (value 15) is at index `2 * 1 + 1 = 3` (value 40).
+- The right child of the node at index `1` (value 15) is at index `2 * 1 + 2 = 4` (value 50).
+
+### 4. **Heap Operations**
+
+Binary heaps support three main operations efficiently:
+
+1. **Insert**: Adding an element to the heap.
+2. **Extract (or Remove) Min/Max**: Removing the smallest (or largest) element from the heap.
+3. **Peek**: Getting the smallest (or largest) element without removing it.
+
+#### 4.1. **Insert Operation**:
+
+Inserting a new element into a binary heap involves adding the element at the next available position in the array
+(to maintain the complete tree property), and then restoring the heap property by "bubbling up"
+(also called **upheap** or **heapify-up**).
+
+**Steps**:
+
+1. Insert the element at the end of the array (or in the next available spot in the tree).
+2. Compare it with its parent. If the heap property is violated (e.g., for a min-heap, if the new element is smaller than its parent), swap it with its parent.
+3. Repeat the process until the heap property is restored (i.e., the element is larger than or equal to its parent for a min-heap).
+
+**Time Complexity**: O(log n), since the height of the heap is log n.
+
+**Example** (Inserting `5` into a min-heap):
+
+```plaintext
+Original heap (array representation):
+[10, 15, 30, 40, 50, 20, 35]
+
+1. Insert `5` at the end:
+[10, 15, 30, 40, 50, 20, 35, 5]
+
+2. Bubble up: Compare 5 with 40 and swap:
+[10, 15, 30, 5, 50, 20, 35, 40]
+
+3. Compare 5 with 15 and swap:
+[10, 5, 30, 15, 50, 20, 35, 40]
+
+4. Compare 5 with 10 and swap:
+[5, 10, 30, 15, 50, 20, 35, 40]
+
+Final heap:
+[5, 10, 30, 15, 50, 20, 35, 40]
+```
+
+#### 4.2. **Extract (Remove) Min/Max**:
+
+Removing the root element (the minimum in a min-heap or maximum in a max-heap) involves:
+
+1. Replace the root with the last element in the array (to maintain the complete tree property).
+2. Remove the last element.
+3. Restore the heap property by **bubbling down** (also called **downheap** or **heapify-down**).
+
+**Steps**:
+
+1. Remove the root element.
+2. Move the last element to the root.
+3. Compare the root with its children. If the heap property is violated, swap it with the smaller (min-heap) or larger (max-heap) child.
+4. Repeat the process until the heap property is restored.
+
+**Time Complexity**: O(log n), as we might need to move the element down the entire height of the tree.
+
+**Example** (Extracting `5` from the min-heap):
+
+```plaintext
+Heap:
+[5, 10, 30, 15, 50, 20, 35, 40]
+
+1. Replace `5` with the last element `40`:
+[40, 10, 30, 15, 50, 20, 35]
+
+2. Bubble down: Compare 40 with 10 and 30, and swap with 10:
+[10, 40, 30, 15, 50, 20, 35]
+
+3. Compare 40 with 15 and swap:
+[10, 15, 30, 40, 50, 20, 35]
+
+Final heap:
+[10, 15, 30, 40, 50, 20, 35]
+```
+
+#### 4.3. **Peek Operation**:
+
+The peek operation simply returns the root element of the heap, which is the smallest element in a min-heap or the largest element in a max-heap. This operation is O(1) since the root is always at index `0` of the array.
+
+### 5. **Applications of Binary Heaps**
+
+Binary heaps are used in many real-world applications due to their efficiency in handling
+priority-related tasks:
+
+- **Priority Queues**: Implemented using binary heaps to ensure efficient insertion and removal of the highest or lowest priority element.
+- **Dijkstra’s Algorithm**: Used to find the shortest path in graphs.
+- **Heap Sort**: A sorting algorithm that uses a binary heap to sort elements in O(n log n) time.
+- **Scheduling Systems**: Where tasks with higher priority should be executed first.
+
+### 6. **Time Complexity of Binary Heap Operations**
+
+| Operation   | Time Complexity |
+| ----------- | --------------- |
+| **Insert**  | O(log n)        |
+| **Extract** | O(log n)        |
+| **Peek**    | O(1)            |
+
+[Back to TOC](#table-of-contents)
+
+---
