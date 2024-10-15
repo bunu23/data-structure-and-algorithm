@@ -19,6 +19,7 @@
    - [Binary Tree](#binary-tree)
    - [Tree Traversal](#tree-traversal)
 8. [Priority Queue](#priority-queue)
+9. [Binary Heap](#binary-heap)
 
 ---
 
