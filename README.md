@@ -18,6 +18,7 @@
 7. [Tree](#tree)
    - [Binary Tree](#binary-tree)
    - [Tree Traversal](#tree-traversal)
+8. [Priority Queue](#priority-queue)
 
 ---
 
@@ -515,3 +516,81 @@ The level order traversal would yield:
 | Level Order      | Level by Level     |
 
 [Back to TOC](#table-of-contents)
+
+---
+
+# Priority Queue
+
+A **Priority Queue** is an abstract data type similar to a regular queue, but with an additional concept
+of "priority" for each element. In a priority queue, each element is assigned a priority value,
+and elements are dequeued based on their priority rather than their order in the queue.
+Priority Queue is a data structure that allows us to find min/max element among a collection of elements in constant time.
+supports following operations:
+insert(key)- inseart a key into priority queue
+deleteMax()/deleteMin()- return and remove largest/smallest key
+getMax()/getMin()-return largest/smallest key.
+
+1. **Basic Concept**
+
+- **Queue Structure**: In a typical queue (like a first-in-first-out (FIFO) structure), elements are
+  dequeued in the order they are enqueued.
+- **Priority Queue**: In a priority queue, every element has a priority, and elements with higher priority
+  are dequeued before elements with lower priority. If two elements have the same priority,
+  they are dequeued based on their order in the queue (FIFO behavior).
+
+**Key Characteristics**
+
+- **Priority Assignment**: Each element has an associated priority value. The lower or higher the number (depending on the implementation), the higher or lower the priority.
+- **Operations**:
+  - **Enqueue/Insert**: Insert an element into the priority queue with an associated priority.
+  - **Dequeue/Extract**: Remove and return the element with the highest (or lowest) priority.
+  - **Peek/Top**: Retrieve the element with the highest (or lowest) priority without removing it.
+- **Ordering Rule**: Elements with higher priority are served before elements with lower priority.
+
+  **Types of Priority Queues**
+
+  - **Min-Priority Queue**: The element with the smallest priority value is dequeued first.
+  - **Max-Priority Queue**: The element with the largest priority value is dequeued first.
+
+  **Priority Queue Operations**
+  Here are the common operations and their typical time complexities:
+
+  | Operation            | Description                                                                | Time Complexity (using a Binary Heap) |
+  | -------------------- | -------------------------------------------------------------------------- | ------------------------------------- |
+  | **Insert (enqueue)** | Add an element to the priority queue with a given priority                 | O(log n)                              |
+  | **ExtractMin/Max**   | Remove and return the element with the smallest (or largest) priority      | O(log n)                              |
+  | **Peek (min/max)**   | Return the element with the smallest (or largest) priority without removal | O(1)                                  |
+  | **Decrease Key**     | Decrease the priority of an element in the queue (for Min PQ)              | O(log n)                              |
+
+**Implementation**
+Priority queues can be implemented in several ways. Some common approaches include:
+
+- **Binary Heap** (most common implementation):
+
+  - A binary heap is a complete binary tree where each parent node’s value is less than (min-heap) or greater than (max-heap) the values of its children.
+  - The binary heap is stored as an array, which allows for efficient insertion and extraction of the element with the highest priority in O(log n) time.
+  - **Min-Heap**: This structure is used for implementing a min-priority queue.
+  - **Max-Heap**: This structure is used for implementing a max-priority queue.
+
+- **Unordered List**:
+
+  - Insertion is O(1), but removing the element with the highest priority requires O(n) as you need to search through the entire list.
+
+- **Ordered List**:
+
+  - Insertion takes O(n) time (since we have to insert elements in the correct order), but extraction is O(1), as the highest priority element is always at the front.
+
+- **Binary Search Trees (BSTs)**:
+  - Operations are O(log n) on average but may degrade to O(n) in the worst case unless self-balancing trees (like AVL trees) are used.
+
+**Priority Queue vs. Other Data Structures**
+
+- **Priority Queue vs. Stack/Queue**:
+  - **Stack**: Elements are processed in a Last-In-First-Out (LIFO) order, and there’s no notion of priority.
+  - **Queue**: Elements are processed in a First-In-First-Out (FIFO) order. All elements have the same priority, unlike a priority queue.
+- **Priority Queue vs. Heap**:
+  - A heap is a specific implementation of a priority queue (binary heap), where elements are arranged based on their priorities.
+
+---
+
+# Binary Heap
