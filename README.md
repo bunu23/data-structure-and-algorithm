@@ -525,6 +525,7 @@ The level order traversal would yield:
 A **Priority Queue** is an abstract data type similar to a regular queue, but with an additional concept
 of "priority" for each element. In a priority queue, each element is assigned a priority value,
 and elements are dequeued based on their priority rather than their order in the queue.
+
 Priority Queue is a data structure that allows us to find min/max element among a collection of elements in constant time.
 supports following operations:
 
