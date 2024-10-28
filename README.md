@@ -650,10 +650,12 @@ In a **max-heap**, the root node (50) is the largest element, and every parent n
   - In a **min-heap**, the key of each node is greater than or equal to the key of its parent.
   - In a **max-heap**, the key of each node is smaller than or equal to the key of its parent.
 
-### 3. **Array Representation of Binary Heap**
+### 3. **Representation of Binary Heap**
 
-One of the key benefits of binary heaps is that they can be efficiently represented using an array, rather than an actual tree structure.
-This is possible because a binary heap is a complete binary tree.
+One of the key benefits of binary heaps is that they can be efficiently represented using an array, rather than an actual tree structure. This is possible because a binary heap is a complete binary tree.
+
+Binary heaps usually are implemented using arrays. The first entry of an array is taken as empty.
+As Binary heaps are complete binary tree, the values are stored in array by traversing tree level by level from left to right.
 
 #### 3.1. **Indexing in an Array**:
 
@@ -768,24 +770,6 @@ Final heap:
 #### 4.3. **Peek Operation**:
 
 The peek operation simply returns the root element of the heap, which is the smallest element in a min-heap or the largest element in a max-heap. This operation is O(1) since the root is always at index `0` of the array.
-
-### 5. **Applications of Binary Heaps**
-
-Binary heaps are used in many real-world applications due to their efficiency in handling
-priority-related tasks:
-
-- **Priority Queues**: Implemented using binary heaps to ensure efficient insertion and removal of the highest or lowest priority element.
-- **Dijkstra’s Algorithm**: Used to find the shortest path in graphs.
-- **Heap Sort**: A sorting algorithm that uses a binary heap to sort elements in O(n log n) time.
-- **Scheduling Systems**: Where tasks with higher priority should be executed first.
-
-### 6. **Time Complexity of Binary Heap Operations**
-
-| Operation   | Time Complexity |
-| ----------- | --------------- |
-| **Insert**  | O(log n)        |
-| **Extract** | O(log n)        |
-| **Peek**    | O(1)            |
 
 [Back to TOC](#table-of-contents)
 
