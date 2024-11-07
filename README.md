@@ -20,6 +20,7 @@
    - [Tree Traversal](#tree-traversal)
 8. [Priority Queue](#priority-queue)
 9. [Binary Heap](#binary-heap)
+10. [HashTable](#hashtable)
 
 ---
 
@@ -774,3 +775,41 @@ The peek operation simply returns the root element of the heap, which is the sma
 [Back to TOC](#table-of-contents)
 
 ---
+
+# HashTable
+
+## HashTable Overview
+
+A **HashTable** is a data structure that stores key-value pairs.
+It uses a **hash function** to convert keys into indexes, allowing for efficient insertion, deletion, and lookup of values
+
+- **Primary Operations**:
+  - **Put(key, value)**: Adds a key-value pair. If the key already exists, it updates the value.
+  - **Get(key)**: Retrieves the value for a given key.
+  - **Remove(key)**: Deletes the key-value pair for the given key.
+- Average running time for these operations is O(1)
+
+## Hashing
+
+**Hashing** is a technique used for storing, retrieving, and removing information as quick as possible. It is a process of converting a arbitary size key into a fixed size value or we can say used to transform data (often a key, like a string or number) into a typically smaller, fixed-size value called a hash.
+This hash value is usually represented as an integer and is produced by a **hash function**.
+
+### Why Do We Need Hashing?
+
+1. **Efficient Data Access**: Hashing enables us to store and retrieve data in constant time, or \(O(1)\), for operations like search, insert, and delete, given a good hash function. This makes it ideal for situations where we need fast lookups, such as databases and caching systems.
+
+2. **Data Organization**: Hashing allows data to be stored in a way that minimizes the number of comparisons required to find a specific item. Without hashing, we'd have to rely on slower search methods, like linear or binary search, which are less efficient for large datasets.
+
+3. **Avoid Direct Storage of Large Keys**: Instead of storing or comparing large keys directly, hashing lets us represent them with smaller, fixed-size hash values. This reduces memory use and speeds up comparisons, especially when working with large datasets or long keys.
+
+## Hash Function
+
+A Hash function simply takes an arbitary size key and provides fixed size value also called as index.
+A **hash function** is an algorithm that takes an input (or "key") and produces a fixed-size string of bytes, usually a number, which is called the **hash value**.
+The purpose of a hash function is to efficiently map a large or arbitrary amount of data (like a string or number) to a specific, smaller range of values.
+The hash function converts this key into a hash value. A common way is to use a formula like `hash(key) % table_size` where `table_size` is the fixed size of the hash table.
+Hash function can be of any type. One function that is commonly used is modular hash function.
+
+The **hash value** (or **hash code**) is the output produced by a hash function. It is typically an integer that represents the input data in a fixed-size format.
+
+[Back to TOC](#table-of-contents)
