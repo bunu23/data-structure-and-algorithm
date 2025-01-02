@@ -82,7 +82,7 @@ public class BoyerMooreVotingAlgorithm {
 2. **Phase 2: Verification**
 
    - Count occurrences of `4`:
-     - \( \text{Occurrences of } 4 = 5 \)
+     - \( \text{Occurrences of } 4 = 5 \).
    - Check if \( 5 > 9/2 \): Yes.
 
    Output: `The majority element is: 4`.
